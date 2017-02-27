@@ -1,0 +1,617 @@
+* {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 400
+}
+
+a {
+  text-decoration: none
+}
+
+li {
+  list-style-type: none
+}
+
+.cf:after, .cf:before {
+  content: " ";
+  display: table
+}
+
+.cf:after {
+  clear: both
+}
+
+.cf {
+  *zoom: 1
+}
+
+body {
+  font-size: 10px;
+  font-family: Helvetica, Arial, sans-serif;
+  background: #eeeddf url(../images/texture3.jpg) repeat;
+  color: #433a3b
+}
+
+.inside, .main-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 4em;
+  position: relative
+}
+
+.main-content {
+  padding-bottom: 4em
+}
+
+.header {
+  margin-top: 55px;
+  background: #e06245 url(../images/nav-texture.jpg) repeat;
+  height: 55px
+}
+
+.triangle {
+  margin-top: -55px;
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 1630px solid transparent;
+  border-top: 1630px solid #fff;
+  left: -1000px;
+  top: 0;
+  position: absolute;
+  overflow: hidden
+}
+
+.logo-area-inside {
+  width: 350px;
+  position: absolute;
+  top: 0;
+  z-index: 999
+}
+
+.logo {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 600;
+  font-size: 2.8em;
+  letter-spacing: .5em;
+  color: #e06245;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: .5em
+}
+
+.alt-logo {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 600;
+  font-size: 2em;
+  letter-spacing: .5em;
+  color: #fff;
+  text-transform: uppercase;
+  float: left;
+  display: none
+}
+
+.about-me {
+  font-size: 1.7em;
+  font-family: ff-tisa-web-pro, Georgia, Times, "Times New Roman", serif;
+  color: #606060;
+  letter-spacing: .06em;
+  line-height: 1.8em;
+  padding-left: 1.5em
+}
+
+.main-nav {
+  height: 55px;
+  line-height: 52px
+}
+
+.main-nav ul {
+  float: right
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 2em
+}
+
+.main-nav li a {
+  font-family: ff-tisa-web-pro, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.6em;
+  text-transform: lowercase;
+  color: #712918;
+  display: block;
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  -ms-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+  transition: all .2s ease-out
+}
+
+.main-nav li a:hover, .main-nav li.selected a {
+  color: #fff
+}
+
+.footer {
+  padding-bottom: 4em
+}
+
+.footer-nav {
+  border-top: solid 6px rgba(0, 0, 0, .05);
+  padding-top: 4em
+}
+
+.footer-nav ul {
+  float: right
+}
+
+.footer-nav li {
+  display: inline-block;
+  margin-left: 2em
+}
+
+.footer-nav li:first-child {
+  margin-left: 0
+}
+
+.footer-nav a {
+  font-family: ff-tisa-web-pro, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.6em;
+  text-transform: lowercase;
+  color: rgba(0, 0, 0, .5)
+}
+
+.footer-nav a:hover {
+  color: #e06245
+}
+
+.main-nav li:first-child {
+  margin: 0
+}
+
+.portfolio-title {
+  font-size: 8.2em;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .13em;
+  position: absolute;
+  color: #eeeddf;
+  left: 59px;
+  top: 172px
+}
+
+.portfolio-title span {
+  color: #fff
+}
+
+.portfolio-items {
+  padding-top: 103px;
+  clear: both
+}
+
+.portfolio-items>li {
+  margin-bottom: 10%
+}
+
+.portfolio-items>li:last-child {
+  margin-bottom: 0
+}
+
+.portfolio-items>li:first-child .text {
+  margin-top: 350px
+}
+
+.portfolio-items>li .additional-portfolio-image, .portfolio-items>li .portfolio-image {
+  float: right;
+  width: 45%
+}
+
+.portfolio-items>li .additional-portfolio-image img, .portfolio-items>li .portfolio-image img {
+  max-width: 100%;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 8px 1px rgba(0, 0, 0, .1);
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, .1)
+}
+
+.portfolio-items>li .additional-portfolio-image {
+  margin-right: 7%;
+  padding-top: 5%
+}
+
+.portfolio-items>li:nth-child(even) .text {
+  float: left;
+  margin-right: 0;
+  margin-left: 7%
+}
+
+.portfolio-items>li:nth-child(even) .portfolio-image {
+  float: left
+}
+
+.portfolio-items>li:nth-child(even) .additional-portfolio-image {
+  margin-right: 0;
+  margin-left: 0
+}
+
+.portfolio-items>li .text {
+  float: right;
+  width: 30%;
+  margin-right: 7%;
+  margin-top: 100px
+}
+
+.portfolio-items>li .text .skills {
+  padding-left: 4em;
+  margin-bottom: 1em
+}
+
+.portfolio-items>li .text .skills li {
+  display: inline;
+  color: #e06245;
+  font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  margin-right: .3em;
+  font-weight: 600
+}
+
+.portfolio-items>li .text .skills li:after {
+  content: ","
+}
+
+.portfolio-items>li .text .skills li:last-child:after {
+  display: none
+}
+
+.portfolio-items>li .text h3 {
+  font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.6em;
+  letter-spacing: .2em;
+  margin-bottom: 1.2em;
+  padding-bottom: 1em;
+  text-transform: uppercase;
+  border-bottom: solid 2px rgba(0, 0, 0, .05)
+}
+
+.portfolio-items>li .text p {
+  font-family: ff-tisa-web-pro, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.6em;
+  margin-bottom: 1em;
+  line-height: 2em;
+  padding-left: 2.5em
+}
+
+.portfolio-items>li .text p a {
+  color: #e06245
+}
+
+.portfolio-items>li .text p:last-child {
+  margin-bottom: 0
+}
+
+.portfolio-items>li .text .action {
+  background: #e06245;
+  padding: 1em 0;
+  font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #eeeddf;
+  font-size: 1.2em;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  margin-left: 3.5em;
+  display: block;
+  width: 40%;
+  text-align: center
+}
+
+.portfolio-items>li .text .action:hover {
+  background: #433a3b
+}
+
+.portfolio-items .multiple .text {
+  margin-bottom: 4em
+}
+
+.portfolio-items .multiple .additional-portfolio-image img, .portfolio-items .multiple .portfolio-image img {
+  margin-bottom: 14%
+}
+
+.portfolio-items .multiple .additional-portfolio-image img:last-child, .portfolio-items .multiple .portfolio-image img:last-child {
+  margin-bottom: 0
+}
+
+.page {
+  margin-top: 130px
+}
+
+article img {
+  max-width: 100%;
+  margin-bottom: 4em
+}
+
+.info {
+  width: 56%;
+  float: right
+}
+
+.info h1 {
+  font-size: 4em;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .13em;
+  margin-bottom: .6em
+}
+
+.info h1 a {
+  color: #433a3b
+}
+
+.info h1 a:hover {
+  color: #e06245
+}
+
+.info p {
+  font-family: ff-tisa-web-pro, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.8em;
+  line-height: 1.8em;
+  margin-bottom: 2em;
+  padding-left: 3em
+}
+
+.info p a {
+  color: #e06245
+}
+
+.info p a:hover {
+  text-decoration: underline
+}
+
+.info blockquote p {
+  font-style: italic
+}
+
+.info h2 {
+  font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.6em;
+  letter-spacing: .2em;
+  margin-bottom: 1em;
+  text-transform: uppercase
+}
+
+.info .normal-list {
+  margin-bottom: 4em
+}
+
+.info .normal-list li {
+  font-family: ff-tisa-web-pro, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.8em;
+  margin-bottom: .6em;
+  padding-left: 3em
+}
+
+.info .normal-list li a {
+  color: #e06245
+}
+
+.info .normal-list li a:hover {
+  text-decoration: underline
+}
+
+.sidebar {
+  float: right;
+  margin-right: 7%
+}
+
+.sidebar li {
+  font-family: ff-tisa-web-pro, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.8em;
+  margin-bottom: 1em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis
+}
+
+.sidebar a {
+  color: #e06245
+}
+
+.sidebar a:hover {
+  color: #433a3b
+}
+
+.sidebar h3 {
+  font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.5em;
+  letter-spacing: .2em;
+  margin-bottom: 1em;
+  text-transform: uppercase
+}
+
+.sidebar img {
+  max-width: 100%;
+  margin-bottom: 3em
+}
+
+.about-sidebar {
+  width: 15%
+}
+
+.about-sidebar .my-links-heading {
+  display: none
+}
+
+.about-icons {
+  padding: 3em 0
+}
+
+.about-icons li {
+  width: 27%;
+  margin-left: 9%;
+  float: left;
+  font-size: 1em
+}
+
+.about-icons li:first-child {
+  margin-left: 0!important
+}
+
+.about-icons li img {
+  max-width: 100%;
+  margin-bottom: 2em;
+  display: block
+}
+
+.about-icons li h3 {
+  font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.4em;
+  letter-spacing: .1em;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  text-align: center
+}
+
+.about-icons li p {
+  padding-left: 0;
+  font-size: 1.5em;
+  text-align: center
+}
+
+.my-links li:before {
+  content: " ";
+  display: block;
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+  background: #e06245 url(../images/icons.png) no-repeat left top;
+  background-size: 24px 175px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%
+}
+
+.my-links li:hover:before {
+  background-color: #433a3b
+}
+
+.my-links .dribbble:before {
+  background-position: 3px -30px
+}
+
+.my-links .email-me:before {
+  background-position: 3px -60px
+}
+
+.my-links .twitter:before {
+  background-position: 3px -90px
+}
+
+.my-links .instagram:before {
+  background-position: 3px -120px
+}
+
+.blog-sidebar {
+  padding-top: 20%;
+  width: 20%
+}
+
+.blog-sidebar li {
+  height: 30px;
+  line-height: 30px
+}
+
+.blog-sidebar li:before {
+  content: " ";
+  display: block;
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  background: url(../images/icons.png) no-repeat left top;
+  background-size: 24px 175px
+}
+
+.blog-sidebar li .archive-number {
+  font-size: .8em
+}
+
+.second-side-bar {
+  padding-top: 4em
+}
+
+.second-side-bar li:before {
+  background-position: 3px -145px
+}
+
+.blog-items li {
+  margin-bottom: 5%;
+  padding-bottom: 5%;
+  border-bottom: solid 3px rgba(0, 0, 0, .05)
+}
+
+.date {
+  text-align: right;
+  font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1.4em;
+  letter-spacing: .2em;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  display: block;
+  color: #e06245
+}
+
+.paging {
+  font-family: ff-tisa-web-pro, Georgia, Times, "Times New Roman", serif;
+  font-weight: 300;
+  font-size: 1.4em;
+  padding-bottom: 5%
+}
+
+.paging a {
+  color: #e06245
+}
+
+.paging em {
+  float: left
+}
+
+.paging .next-prev {
+  float: right
+}
+
+.paging .next-prev li {
+  display: inline-block;
+  margin-left: 1em
+}
+
+.note {
+  font-family: ff-tisa-web-pro, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.4em;
+  margin-top: -2em;
+  margin-bottom: 2em;
+  display: block
+}
+
+.note a {
+  color: #e06245
+}
+
+.test {
+  position: fixed;
+  top: 10px;
+  left: 10px
+}

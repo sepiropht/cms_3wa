@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="styles/normalize.css"></link>
+  <link rel="stylesheet" href="styles/responsive.css"></link>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <!-- Add your site or app content here -->
+  <header class="header">
+    <div class="inside">
+
+      <div class="logo-area-inside">
+        <a href="index.html" class="logo">William Mbotta Elimbi</a>
+        <h2 class="about-me">freelance &amp; fullstack js developer based in the Paris</h2>
+      </div>
+
+      <div class="triangle"></div>
+
+      <nav class="main-nav">
+        <a href="index.html" class="alt-logo">William Mbotta Elimbi</a>
+
+        <ul>
+          <li class="selected"><a href="index.html">Portfolio</a></li>
+          <li><a href="cv.pdf">About</a></li>
+          <li><a href="mailto:sergembotta@mailoo.org">Contact</a></li>
+          <li><a href="https://twitter.com/elimbi_william">Twitter</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+  <section class="main-content cf">
+
+    <h1 class="portfolio-title">Port<span>folio</span></h1>
+
+    <div class="inside-portfolio">
+      <ul class="portfolio-items">
+
+        <!-- demuxed -->
+        <?php foreach($orders as $order): ?>
+        <li id="kpler" class="portfolio-item multiple cf">
+          <div class="portfolio-image">
+            <img src= "$order['image-1'] ?>" alt="kpler home">
+            <img src= "$order['image-2'] ?>" alt="kpler logo">
+
+          </div>
+
+          <div class="text">
+            <h3>$order['title'] ?></h3>
+            <ul class="skills">
+              <li>$order['tag-1'] ?></li>
+              <li>$order['tag-2'] ?></li>
+            </ul>
+
+            <p> $order['text-1'] ?></p>
+
+            <p>
+              $order['text-2'] ?>
+            </p>
+
+
+            <p>$order['text-3'] ?></p>
+
+            <a href="$order['link'] ?>" class="action">Visit site</a>
+
+          </div>
+
+          <div class="additional-portfolio-image">
+            <img src= "$order['image-3'] ?>" alt="logo">
+
+        </li>
+        <?php endforeach ?>
+      </ul>
+      <!-- portfolio-items -->
+      </div>
+      <!-- inside-portfolio -->
+
+
+  </section>
+
+
+
+  <footer class="footer">
+
+    <div class="inside cf">
+
+      <nav class="footer-nav cf">
+
+        <ul>
+          <li class="selected"><a href="index.html">Portfolio</a></li>
+          <li><a href="cv.pdf">About</a></li>
+          <li><a href="mailto:sergembotta@mailoo.com">Contact</a></li>
+          <li><a href="https://twitter.com/olilis">Twitter</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </footer>
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-28004327-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script');
+  ga.type = 'text/javascript';
+  ga.async = true;
+  ga.src = ('https:' == document.location.protocol
+    ? 'https://ssl'
+    : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(ga, s);
+})();
+</script>
+</body>
+
+</html>
